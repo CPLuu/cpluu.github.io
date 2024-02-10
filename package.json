@@ -1,0 +1,38 @@
+{
+  "name": "astro-bento-portfolio",
+  "type": "module",
+  "version": "0.0.2",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/netlify": "^4.0.2",
+    "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/solid-js": "^3.0.3",
+    "@iconify-json/ri": "^1.1.18",
+    "astro": "^4.0.8",
+    "astro-icon": "^1.0.1",
+    "astro-robots-txt": "^1.0.0",
+    "mdast-util-to-string": "^4.0.0",
+    "reading-time": "^1.5.0",
+    "solid-js": "^1.8.7"
+  },
+  "devDependencies": {
+    "@unocss/astro": "^0.58.2",
+    "@unocss/postcss": "^0.58.2",
+    "@unocss/preset-uno": "^0.58.2",
+    "@unocss/reset": "^0.58.2",
+    "autoprefixer": "^10.4.16",
+    "markdown-it": "^14.0.0",
+    "d3": "^7.8.5",
+    "motion": "^10.16.4",
+    "sanitize-html": "^2.11.0",
+    "unocss": "^0.58.2",
+    "@types/d3": "^7.4.3"
+  }
+}
