@@ -23,16 +23,17 @@
     "solid-js": "^1.8.12"
   },
   "devDependencies": {
+    "@iconify-json/academicons": "^1.1.14",
+    "@types/d3": "^7.4.3",
     "@unocss/astro": "^0.58.5",
     "@unocss/postcss": "^0.58.5",
     "@unocss/preset-uno": "^0.58.5",
     "@unocss/reset": "^0.58.5",
     "autoprefixer": "^10.4.17",
-    "markdown-it": "^14.0.0",
     "d3": "^7.8.5",
+    "markdown-it": "^14.0.0",
     "motion": "^10.17.0",
     "sanitize-html": "^2.11.0",
-    "unocss": "^0.58.5",
-    "@types/d3": "^7.4.3"
+    "unocss": "^0.58.5"
   }
 }

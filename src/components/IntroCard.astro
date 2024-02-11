@@ -9,31 +9,36 @@ import Tooltip from "./Tooltip/index";
 <Card colSpan="md:col-span-3" rowSpan="md:row-span-4">
   <div class="flex w-full h-full">
     <div class="flex flex-col justify-between md:max-h-[300px] gap-4">
+      
       <div class="flex flex-col h-full">
         <h6 class="text-sm font-light m-0 text-gray-500">welcome</h6>
         <p class="m-0 font-light text-xl">
           Xin chào, I'm <b class="font-bold">Cường P. Luu</b>, a medical student with a strong focus on advancing neurosurgical care, neuropsychiatric research, and the philosophy of mind.
         </p>
       </div>
+      
       <div class="m-0 flex gap-4">
+        <a href={LINKS.cv} aria-label="cv doc" target="_blank">
+          <Button aria-label="cv doc">
+            <Icon name="academicons:cv" class="h-6" />
+            <span class="sr-only">GitHub Profile</span>
+          </Button>
+        </a>
+
         <a href={LINKS.github} aria-label="github profile" target="_blank">
           <Button aria-label="github profile">
             <Icon name="ri:github-fill" class="h-6" />
             <span class="sr-only">GitHub Profile</span>
           </Button>
         </a>
-        <a href={LINKS.linkedin} aria-label="linkeding profile" target="_blank">
-          <Button aria-label="linkedin profile">
-            <Icon name="ri:linkedin-box-fill" class="h-6" />
-            <span class="sr-only">Linkedin Profile</span>
-          </Button>
-        </a>
-        <a href={LINKS.dribble} aria-label="dribble profile" target="_blank">
-          <Button aria-label="dribble profile">
-            <Icon name="ri:dribbble-fill" class="h-6" />
+
+        <a href={LINKS.instagram} aria-label="instagram profile" target="_blank">
+          <Button aria-label="instagram profile">
+            <Icon name="ri:instagram-fill" class="h-6" />
             <span class="sr-only">Dribble Profile</span>
           </Button>
         </a>
+
         <Tooltip client:visible>
           <Button aria-label="easter egg btn">
             <Icon name="ri:emotion-laugh-line" class="h-6" />
@@ -42,6 +47,7 @@ import Tooltip from "./Tooltip/index";
         </Tooltip>
       </div>
     </div>
+    
     <img
       width="300"
       height="300"
