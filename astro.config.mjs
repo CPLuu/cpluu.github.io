@@ -26,7 +26,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
-  // output: "server", ARE these lines needed if we're deploying on github pages??
+  output: "server",
   // adapter: netlify(),
 });
 // export default defineConfig({
