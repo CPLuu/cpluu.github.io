@@ -10,13 +10,13 @@ import { remarkReadingTime } from "./src/lib/ remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://gianmarco.xyz/",
+  site: "https://cpluu.netlify.app/",
   integrations: [
     sitemap(),
     robotsTxt({
       sitemap: [
-        "https://gianmarco.xyz/sitemap-index.xml",
-        "https://gianmarco.xyz/sitemap-0.xml",
+        "https://cpluu.netlify.app/sitemap-index.xml",
+        "https://cpluu.netlify.app/sitemap-0.xml",
       ],
     }),
     solidJs(),
@@ -29,3 +29,6 @@ export default defineConfig({
   output: "server",
   adapter: netlify(),
 });
+
+
+// GitHub Pages deplayment fails because it doesn't support SSR adapters for server side rendering
