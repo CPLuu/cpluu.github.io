@@ -1,12 +1,10 @@
-# ⚡️astro-bento-portfolio
+# 🍱 Astro Bento Portfolio
 
-## A personal portfolio website made using `Astro`.
+## A personal portfolio website made using the `Astro` framework.
 
 ![astro-bento-portfolio | Bento-like Personal Porfolio Template](public/preview.png)
 
-To view a demo example, **[click here](https://sparkly-speculoos-0c9197.netlify.app/)**
-
-or my portfolio **[click here](https://gianmarco.xyz/)**
+My portfolio example: **[click here](https://cpluu.netlify.app/)**
 
 ## Features
 
@@ -26,10 +24,13 @@ or my portfolio **[click here](https://gianmarco.xyz/)**
 - [motion](https://motion.dev/)
 - [d3](https://d3js.org/)
 
-# Steps ▶️
+# Steps to building your own ▶️
 
 ```bash
-# Clone this repository
+# Clone this repository (with American localization by me)
+$ git clone https://github.com/CPLuu/cpluu.github.io.git
+
+# or, Clone the original repository (template maintained by the original dev)
 $ git clone https://github.com/Ladvace/astro-bento-portfolio
 ```
 
@@ -40,32 +41,25 @@ $ cd astro-bento-portfolio
 
 ```bash
 # Install dependencies
-$ pnpm install
-or
 $ npm install
 ```
 
 ```bash
 # Start the project in development
-$ pnpm run dev
-or
 $ npm run dev
 ```
 
 # Configuration
 
-remember to replace the `site` and other properties with your data in `astro.config.mjs`
+Remember to replace the `site` and other properties with your data in `astro.config.mjs`
 
-# Deploy on Netlify 🚀
+# Deployment  🚀
 
-Deploying your website on Netlify it's optional but I reccomand it in order to deploy it faster and easly.
-
-You just need to fork this repo and linking it to your Netlify account.
-
-or
+Deploying your website on Netlify is optional. It's the easier method because `astro.config.mjs` contain an SSR adapter that is integrated into Netlify. GitHub Pages will not work with this template.  
 
 [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Ladvace/astro-bento-portfolio)
 
 ## Authors ❤️
 
-- Gianmarco - https://github.com/Ladvace
+- Cuong - https://github.com/CPLuu
+- Gianmarco (the OG) - https://github.com/Ladvace
