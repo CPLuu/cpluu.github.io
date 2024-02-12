@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@iconify-json/academicons": "^1.1.14",
+    "@iconify-json/noto": "^1.1.18",
     "@types/d3": "^7.4.3",
     "@unocss/astro": "^0.58.5",
     "@unocss/postcss": "^0.58.5",

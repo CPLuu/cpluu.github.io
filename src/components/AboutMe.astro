@@ -2,31 +2,38 @@
 import Card from "./Card/index.astro";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me" >
   <div class="flex flex-col gap-2">
     <p class="text-sm font-light">
-      Hi, I'm Cuong, a medical student at UW Madison. My mission:
+      Hi, I'm Cuong, a medical student at UW Madison with a background in bioengineering from
+      UC Berkeley.
       <br />
+    </p>
 
+    
+    <p class="text-sm font-light margin-bottom:0">
+      My mission is to <em>empower</em>...
+    </p>
+    <p class="text-xl font-light margin : 0; padding-top:0;">
+      <strong><em> a world where every person can self-determine! </em></strong>
+    </p>
+    
 
-      <ul> <strong><em> to create a world where every person feels empowered to self-determine!</em></strong></ul>
-     
-
-      <!-- My primary tools of choice includes:
-      <ul class="list-disc list-inside">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Solidjs</li>
-        <li>Astro</li>
-        <li>svelte</li>
-        <li>Nodejs</li>
-      </ul> -->
+    <p class="text-sm font-light">
+      This may be an impossible dream. Yet, I feel bottomless energy—
+      learning how to best care for each of my patients, deeping my repertoire for translational research, 
+      serving those vulternable in my community, and mentoring the next generation to do better than I could. 
     </p>
     <p class="text-sm font-light">
-      I pursue this imppossible dream through compassionate patient care, advance research, mentorship, and service...
+      That's a lot; I am learning to be more efficient. 
+      When free, my friends and I take our bike to zoom across the city, or fire up the skillets to fry some chicken katsu.
     </p>
-    <p class="text-sm font-light">
-      While I chase my goals intensely, I also take time off zoom across the cities on my bike and fry some chicken katsu for my friends.
-    </p>
+
+    <!-- <p class="text-sm font-light">
+      <img src="/red-lotus-alliance.svg" class="display: inline-block;">
+      Will you join me?
+    </p> -->
+    <!-- cannot get this to display inline with the text -->
+
   </div>
 </Card>

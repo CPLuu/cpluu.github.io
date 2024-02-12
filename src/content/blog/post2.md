@@ -1,18 +1,11 @@
 ---
 layout: ../../layouts/LayoutBlogPost.astro
-title: "Hello, World"
+title: "Hello, World, Again"
 description: "this is a post example"
-pubDate: 2023-01-21
+pubDate: 2024-02-21
 category: "intro"
 ---
 
 # Hi there!
 
-This Markdown file creates a page at `your-domain.com/post1/`
-
-It probably isn't styled much, but Markdown does support:
-
-- **bold** and _italics._
-- lists
-- [links](https://astro.build)
-- and more!
+I am still figuring out what I want to post here. It's more likely that I will post on medium to make publishing simpler. Thank you for checking this out!

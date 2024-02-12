@@ -2,8 +2,9 @@ export const LINKS = {
   github: "https://github.com/CPLuu",
   linkedin: "https://www.linkedin.com/in/cuong-luu/",
   medium: "https://medium.com/@cpluu",
-  cv: "https://docs.google.com/document/d/e/2PACX-1vQUlfLr8ZlP9M7awbHw3Nmo11E0ToAiQkLYsnw-RtF03tu2BcOJRpioPlwqzWs4LvLMl3UK4yypTX-Y/pub",
+  cv: "https://docs.google.com/document/d/1Uy9PPBPVC4ohgdxADSii_V87lpt3yuUmBIt-AYjYbMI/edit?usp=sharing",
   instagram: "https://www.instagram.com/postcall_luucp/",
+  bluesky: "https://bsky.app/profile/cluu.bsky.social",
 };
 
 export const loaderAnimation = [

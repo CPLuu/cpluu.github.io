@@ -31,4 +31,4 @@ export default defineConfig({
 });
 
 
-// GitHub Pages deplayment fails because it doesn't support SSR adapters for server side rendering
+// GitHub Pages deployment fails because it doesn't support SSR adapters for server side rendering
