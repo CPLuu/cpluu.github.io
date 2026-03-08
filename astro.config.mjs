@@ -13,12 +13,7 @@ export default defineConfig({
   site: "https://cpluu.netlify.app/",
   integrations: [
     sitemap(),
-    robotsTxt({
-      sitemap: [
-        "https://cpluu.netlify.app/sitemap-index.xml",
-        "https://cpluu.netlify.app/sitemap-0.xml",
-      ],
-    }),
+    robotsTxt(),
     solidJs(),
     UnoCSS({ injectReset: true }),
     icon()
