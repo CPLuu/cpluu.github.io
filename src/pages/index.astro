@@ -31,42 +31,43 @@ import Globe from "../components/Globe";
   timeline(sequence as TimelineDefinition);
 </script>
 
-<Layout
-  title="Cuong P. Luu – Over & Beyond!"
-  description="Featuring my works"
->
+<Layout title="Cuong P. Luu – Over & Beyond!" description="Featuring my works">
   <main
-    class="text-white m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-rows-8 lg:grid-cols-4 lg:gap-4 lg:max-h-[800px]"
+    class="text-white m-auto p-2 grid gap-2 max-w-6xl overflow-hidden relative w-full sm:p-4 sm:gap-2 md:grid-cols-2 md:gap-3 md:p-6 lg:h-screen lg:grid-rows-8 lg:grid-cols-10 lg:gap-4 lg:max-h-[800px]"
   >
     <IntroCard />
     <AboutMe />
     <ContactsCard />
     <TimeZone />
     <Card
-      colSpan="md:col-span-1"
+      colSpan="md:col-span-1 lg:col-span-3"
       rowSpan="md:row-span-2"
-      title="Blog - very much a work in progress :)"
+      title="Works I like to show off 😛 (Will update)"
       href="/blog"
     />
     <Card
-      colSpan="md:col-span-1"
+      colSpan="md:col-span-1 lg:col-span-2"
       rowSpan="md:row-span-1"
-      title="2 countries I visited"
       href="travel"
       colorText="text-neutral-900"
     >
       <div class="h-full w-full absolute inset-0 -z-10">
         <Globe client:load />
       </div>
+      <div
+        class="absolute inset-0 w-full h-full flex flex-col justify-center items-start px-6 pointer-events-none"
+      >
+        <h2 class="text-lg font-bold m-0 z-20 text-left">Countries visited</h2>
+      </div>
     </Card>
 
     <Now />
-    <Card colSpan="md:col-span-1" rowSpan="md:row-span-1">
+    <Card colSpan="md:col-span-1 lg:col-span-2" rowSpan="md:row-span-1">
       <p class="text-xs">
-        © 2024 · 🛠️ with ♥️ & 😭 using <a
+        © · Crafted with 😭 using <a
           href="https://github.com/CPLuu/cpluu.github.io"
           target="_blank"
-          class="text-red-500">Astro (source code)</a
+          class="text-red-500">Astro</a
         >.
       </p>
     </Card>

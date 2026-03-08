@@ -12,7 +12,7 @@ My portfolio example: **[click here](https://cpluu.netlify.app/)**
 - All in one page (almost)
 - Fully Responsive
 - Performances and SEO optimizations
-- Ready to be deployed on [Netlify](https://www.netlify.com/)
+- Ready to be deployed on Netlify
 - Blog
 - RSS support (your-domain/rss.xml)
 - Cool 3d globe
@@ -24,7 +24,7 @@ My portfolio example: **[click here](https://cpluu.netlify.app/)**
 - [motion](https://motion.dev/)
 - [d3](https://d3js.org/)
 
-# Steps to building your own ▶️
+# Steps to building your own 🚀
 
 ```bash
 # Clone this repository (with American localization by me)
@@ -53,7 +53,7 @@ $ npm run dev
 
 Remember to replace the `site` and other properties with your data in `astro.config.mjs`
 
-# Deployment  🚀
+# Deployment  
 
 Deploying your website on Netlify is optional. It's the easier method because `astro.config.mjs` contain an SSR adapter that is integrated into Netlify. GitHub Pages will not work with this template.  
 

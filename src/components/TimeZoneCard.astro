@@ -1,11 +1,11 @@
 ---
-import { getCurrentTimeInItaly, formatTimeForItaly } from "../lib/helpers";
+import { getCurrentTime, formatTime } from "../lib/helpers";
 import Card from "./Card/index.astro";
 ---
 
 <script>
   import { onCleanup, onMount } from "solid-js";
-  import { formatTimeForItaly } from "../lib/helpers";
+  import { formatTime } from "../lib/helpers";
 
   let interval: ReturnType<typeof setInterval>;
 
@@ -14,7 +14,7 @@ import Card from "./Card/index.astro";
     const now = new Date();
 
     if (timeDisplay) {
-      timeDisplay.textContent = formatTimeForItaly(now);
+      timeDisplay.textContent = formatTime(now);
       timeDisplay.setAttribute("datetime", now.toISOString());
     }
   }
@@ -28,12 +28,21 @@ import Card from "./Card/index.astro";
   });
 </script>
 
-<Card colSpan="lg:col-span-2" rowSpan="md:row-span-2" title="Running on">
-  <time
-    datetime=""
-    id="timeDisplay"
-    class="text-2xl xl:text-5xl xl:whitespace-nowrap w-50 xl:w-100 h-[calc(100%-28px)] font-serif flex justify-center items-center"
-  >
-    {formatTimeForItaly(getCurrentTimeInItaly())}
-  </time>
+<Card colSpan="lg:col-span-5" rowSpan="md:row-span-2" title="Flying in">
+  <div class="flex h-[calc(100%-28px)] w-full justify-center items-center">
+    <div class="flex items-center gap-4">
+      <time
+        datetime=""
+        id="timeDisplay"
+        class="text-2xl xl:text-5xl whitespace-nowrap font-serif w-[120px] xl:w-[220px]"
+      >
+        {formatTime(getCurrentTime())}
+      </time>
+      <span
+        class="text-xl xl:text-3xl font-light text-gray-500 whitespace-nowrap"
+      >
+        Zulu Time
+      </span>
+    </div>
+  </div>
 </Card>

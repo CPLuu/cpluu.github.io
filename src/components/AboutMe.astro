@@ -2,30 +2,40 @@
 import Card from "./Card/index.astro";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-6" title="About me" >
+<Card
+  colSpan="md:col-span-1 lg:col-span-3"
+  rowSpan="md:row-span-6"
+  title="About me"
+>
   <div class="flex flex-col gap-2">
-    <p class="text-sm font-light">
-      Hi, I'm Cuong, a medical student at UW Madison with a background in bioengineering from
-      UC Berkeley.
+    <p class="text-base font-light">
+      Hi, I'm Cuong, a medical graduate at UW Madison with a background in
+      bioengineering from UC Berkeley.
       <br />
     </p>
 
-    
-    <p class="text-sm font-light margin-bottom:0">
+    <p class="text-base font-light margin-bottom:0">
       I aim to <em>empower</em>...
     </p>
     <p class="text-xl font-light margin : 0; padding-top:0;">
-      <strong><em>every person with a healthy brain and mind so that each can fully self-determine!</em></strong>
+      <strong
+        ><em
+          >every person with a healthy brain and mind so that each can fully
+          self-determine!</em
+        ></strong
+      >
     </p>
-     
 
-    <p class="text-sm font-light">
-      This may be an impossible dream. Yet, I feel boundless energy—learning how to best care for each of my patients, deeping my skills for translational research, and 
-      serving those vulnerable in my community. I strive to mentor the next generation to do better than I can. 
+    <p class="text-base font-light">
+      This may be an impossible dream. Yet, I feel boundless energy—learning how
+      to best care for each of my patients, deeping my skills for translational
+      research, and serving those vulnerable in my community. I strive to mentor
+      the next generation to do better than I can.
     </p>
-    <p class="text-sm font-light">
-      That's a lot; I am learning to be more efficient. 
-      When free, my friends and I take our bikes to zoom across the city, or fire up the skillet to fry some chicken katsu.
+    <p class="text-base font-light">
+      That's a lot; I am learning to be more efficient. When free, my friends
+      and I zoom around on our bikes or fire up the skillet for some chicken
+      katsu 🥘.
     </p>
 
     <!-- <p class="text-sm font-light">
@@ -33,6 +43,5 @@ import Card from "./Card/index.astro";
       Will you join me?
     </p> -->
     <!-- cannot get this to display inline with the text -->
-
   </div>
 </Card>
