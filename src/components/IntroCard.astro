@@ -21,8 +21,14 @@ import Tooltip from "./Tooltip/index";
       <div class="m-0 flex gap-4">
         <a href={LINKS.cv} aria-label="cv doc" target="_blank">
           <Button aria-label="cv doc">
-            <Icon name="academicons:cv" class="h-[30px]" />
-            <span class="sr-only">GitHub Profile</span>
+            <span class="cv-btn-content">
+              <Icon
+                name="academicons:cv"
+                class="h-[40px] w-[40px]"
+                style="font-size: 40px;"
+              />
+              <span class="cv-text">(Curriculum Vitae)</span>
+            </span>
           </Button>
         </a>
 
@@ -33,12 +39,12 @@ import Tooltip from "./Tooltip/index";
           </Button>
         </a> -->
 
-        <a href={LINKS.bluesky} aria-label="bluesky profile" target="_blank">
+        <!-- <a href={LINKS.bluesky} aria-label="bluesky profile" target="_blank">
           <Button aria-label="bluesky profile">
             <Icon name="ri:bluesky-fill" class="h-[30px]" />
             <span class="sr-only">GitHub Profile</span>
           </Button>
-        </a>
+        </a> -->
 
         <!-- <a href={LINKS.instagram} aria-label="instagram profile" target="_blank">
           <Button aria-label="instagram profile">
@@ -49,7 +55,7 @@ import Tooltip from "./Tooltip/index";
 
         <Tooltip client:visible>
           <Button aria-label="easter egg btn">
-            <Icon name="noto:lotus" class="h-[30px]" />
+            <Icon name="noto:lotus" class="h-[35px] w-[35px]" />
             <span class="sr-only">Easter egg button</span>
           </Button>
         </Tooltip>
@@ -65,3 +71,27 @@ import Tooltip from "./Tooltip/index";
     />
   </div>
 </Card>
+
+<style>
+  .cv-btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .cv-text {
+    color: rgb(229, 231, 235); /* text-gray-200 equivalent */
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+    transition: color 270ms ease-in-out;
+    white-space: nowrap;
+  }
+
+  /* When the parent button is hovered or active, turn text red */
+  :global(.custom-btn:hover) .cv-text,
+  :global(.custom-btn:active) .cv-text {
+    color: var(--color-primary-500, #ef4444);
+  }
+</style>
