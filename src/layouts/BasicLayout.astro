@@ -83,4 +83,74 @@ const image =
   b {
     font-weight: 700 !important;
   }
+
+  /* Glowing stars / neural network banner */
+  .switchboard {
+    background-color: #0B0B0B;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .switchboard .star {
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    position: relative;
+    transition: transform 120ms ease;
+  }
+
+  /* Background neurons: dim reddish glow at rest (color set inline) */
+  .switchboard .star-bg {
+    opacity: 0.6;
+  }
+
+  .switchboard .star::after,
+  .switchboard .star::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border-radius: inherit;
+    transition: opacity 10ms ease;
+  }
+
+  /* Text neurons: medium activation — 35% dimmer steady glow */
+  .switchboard .star-text::before {
+    background: #962D38;
+    box-shadow: 0px 0px 4px 2px #681C23;
+  }
+
+  /* Text neurons: high activation — white-hot core with red glow */
+  .switchboard .star-text::after {
+    background: #ffffff;
+    box-shadow: 0px 0px 2px 1px #E63946,
+      0px 0px 6px 2px #A01B2B;
+  }
+
+  /* Background neurons: subtle dim pulse */
+  .switchboard .star-bg::before {
+    background: #8B1A1A;
+    box-shadow: 0px 0px 3px 1px #5C1010;
+  }
+
+  /* Off state */
+  .switchboard .star[data-state="off"].star-text {
+    background: #8A2626;
+  }
+
+  /* Text neuron activation states */
+  .switchboard .star[data-state="medium"]::before {
+    opacity: 1;
+  }
+
+  .switchboard .star[data-state="high"]::after {
+    opacity: 1;
+  }
+
+  /* Background neuron pulse */
+  .switchboard .star[data-state="bg-pulse"]::before {
+    opacity: 0.7;
+  }
 </style>

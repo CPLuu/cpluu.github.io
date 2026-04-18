@@ -1,0 +1,32 @@
+---
+import Card from "./Card/index.astro";
+---
+
+<Card colSpan="md:col-span-1 lg:col-span-3" rowSpan="md:row-span-2">
+    <div class="grid grid-cols-1 gap-1.5 mt-1 w-full">
+        <a
+            href="/autonomy-diagrams"
+            target="_blank"
+            class="flex items-center gap-2 px-2.5 py-1.5 rounded-md bg-darkslate-400 hover:bg-darkslate-300 border border-darkslate-100 transition-all duration-200 text-base text-neutral-200 hover:text-white decoration-none"
+        >
+            <span class="text-primary-400"> 🕊️ </span>
+            <span>Physical Autonomy Framework</span>
+        </a>
+        <a
+            href="https://surgicalsynapse.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-2.5 py-1.5 rounded-md bg-darkslate-400 hover:bg-darkslate-300 border border-darkslate-100 transition-all duration-200 text-base text-neutral-200 hover:text-white decoration-none"
+        >
+            <span class="text-primary-400"> ⚕️ </span>
+            <span>SurgicalSynapse.com</span>
+        </a>
+        <a
+            href="/notes"
+            class="flex items-center gap-2 px-2.5 py-1.5 rounded-md bg-darkslate-400 hover:bg-darkslate-300 border border-darkslate-100 transition-all duration-200 text-base text-neutral-200 hover:text-white decoration-none"
+        >
+            <span class="text-primary-400"> 🌟 </span>
+            <span>Notes - Sharing All I've Learned</span>
+        </a>
+    </div>
+</Card>

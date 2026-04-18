@@ -1,5 +1,6 @@
 // uno.config.ts
 import { defineConfig, presetUno, presetWebFonts } from "unocss";
+import presetTypography from "@unocss/preset-typography";
 
 export default defineConfig({
   content: {
@@ -63,6 +64,7 @@ export default defineConfig({
   },
   presets: [
     presetUno(),
+    presetTypography(),
     presetWebFonts({
       provider: "fontshare",
       fonts: {
