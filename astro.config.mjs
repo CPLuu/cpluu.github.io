@@ -1,16 +1,16 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import netlify from "@astrojs/netlify";
 import robotsTxt from "astro-robots-txt";
 import UnoCSS from "@unocss/astro";
 import icon from "astro-icon";
 
 import solidJs from "@astrojs/solid-js";
-import { remarkReadingTime } from "./src/lib/ remark-reading-time.mjs";
+// Injects minutesRead frontmatter for notes
+import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://cpluu.netlify.app/",
+  site: "https://cpluu.github.io/",
   integrations: [
     sitemap(),
     robotsTxt(),
@@ -21,9 +21,5 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
-  output: "server",
-  adapter: netlify(),
+  output: "static",
 });
-
-
-// GitHub Pages deployment fails because it doesn't support SSR adapters for server side rendering

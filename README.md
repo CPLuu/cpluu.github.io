@@ -2,9 +2,9 @@
 
 ## A personal portfolio website made using the `Astro` framework.
 
-![astro-bento-portfolio | Bento-like Personal Porfolio Template](public/preview.png)
+![astro-bento-portfolio | Bento-like Personal Porfolio Template](.github/preview.png)
 
-My portfolio example: **[click here](https://cpluu.netlify.app/)**
+My portfolio example: **[click here](https://cpluu.github.io/)**
 
 ## Features
 
@@ -12,7 +12,7 @@ My portfolio example: **[click here](https://cpluu.netlify.app/)**
 - All in one page (almost)
 - Fully Responsive
 - Performances and SEO optimizations
-- Ready to be deployed on Netlify
+- Ready to be deployed on GitHub Pages
 - Blog
 - RSS support (your-domain/rss.xml)
 - Cool 3d globe
@@ -55,9 +55,12 @@ Remember to replace the `site` and other properties with your data in `astro.con
 
 # Deployment  
 
-Deploying your website on Netlify is optional. It's the easier method because `astro.config.mjs` contain an SSR adapter that is integrated into Netlify. GitHub Pages will not work with this template.  
+This website natively supports deployment to GitHub Pages using the included GitHub Actions workflow (`.github/workflows/deploy.yml`).
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Ladvace/astro-bento-portfolio)
+1. Go to your repository **Settings** -> **Pages**.
+2. Under "Source", select **GitHub Actions**.
+
+Your site will automatically build and deploy whenever you push to the `main` branch. For more information, refer to the [official Astro GitHub Pages Guide](https://docs.astro.build/en/guides/deploy/github/).
 
 ## Authors ❤️
 

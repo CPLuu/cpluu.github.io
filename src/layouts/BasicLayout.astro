@@ -34,7 +34,20 @@ const image =
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
 
-    <link rel="preconnect" href="https://cdn.fontshare.com" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="/fonts/CabinetGrotesk-Variable.ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="/fonts/Satoshi-Variable.ttf"
+      crossorigin
+    />
   </head>
   <body
     class="bg-darkslate-700 md:h-screen flex flex-col justify-center items-center"
@@ -74,7 +87,7 @@ const image =
   h4,
   h5,
   h6 {
-    font-family: "Cabinet Grotesk", sans-serif;
+    font-family: "CabinetGrotesk", sans-serif;
   }
   p {
     font-family: "Satoshi";
@@ -84,9 +97,11 @@ const image =
     font-weight: 700 !important;
   }
 
-  /* Glowing stars / neural network banner */
+  /* Glowing stars / neural network banner 
+   * This drives the GlowingStarsBanner glow states
+   */
   .switchboard {
-    background-color: #0B0B0B;
+    background-color: #0b0b0b;
     padding: 30px 20px;
     border-radius: 20px;
     width: 100%;
@@ -118,26 +133,27 @@ const image =
 
   /* Text neurons: medium activation — 35% dimmer steady glow */
   .switchboard .star-text::before {
-    background: #962D38;
-    box-shadow: 0px 0px 4px 2px #681C23;
+    background: #962d38;
+    box-shadow: 0px 0px 4px 2px #681c23;
   }
 
   /* Text neurons: high activation — white-hot core with red glow */
   .switchboard .star-text::after {
     background: #ffffff;
-    box-shadow: 0px 0px 2px 1px #E63946,
-      0px 0px 6px 2px #A01B2B;
+    box-shadow:
+      0px 0px 2px 1px #e63946,
+      0px 0px 6px 2px #a01b2b;
   }
 
   /* Background neurons: subtle dim pulse */
   .switchboard .star-bg::before {
-    background: #8B1A1A;
-    box-shadow: 0px 0px 3px 1px #5C1010;
+    background: #8b1a1a;
+    box-shadow: 0px 0px 3px 1px #5c1010;
   }
 
   /* Off state */
   .switchboard .star[data-state="off"].star-text {
-    background: #8A2626;
+    background: #8a2626;
   }
 
   /* Text neuron activation states */

@@ -4,6 +4,8 @@ import Button from "./Button.astro";
 import { LINKS } from "../lib/constants";
 import { Icon } from "astro-icon/components";
 import Tooltip from "./Tooltip/index";
+import { Image } from "astro:assets";
+import portraitImage from "../assets/cuong-luu-medicine-portrait.png";
 ---
 
 <Card colSpan="md:col-span-3 lg:col-span-7" rowSpan="md:row-span-4">
@@ -32,26 +34,7 @@ import Tooltip from "./Tooltip/index";
           </Button>
         </a>
 
-        <!-- <a href={LINKS.googlescholar} aria-label="google scholar profile" target="_blank">
-          <Button aria-label="google scholar profile">
-            <Icon name="academicons:google-scholar-square" class="h-6" />
-            <span class="sr-only">Dribble Profile</span>
-          </Button>
-        </a> -->
 
-        <!-- <a href={LINKS.bluesky} aria-label="bluesky profile" target="_blank">
-          <Button aria-label="bluesky profile">
-            <Icon name="ri:bluesky-fill" class="h-[30px]" />
-            <span class="sr-only">GitHub Profile</span>
-          </Button>
-        </a> -->
-
-        <!-- <a href={LINKS.instagram} aria-label="instagram profile" target="_blank">
-          <Button aria-label="instagram profile">
-            <Icon name="ri:instagram-fill" class="h-6" />
-            <span class="sr-only">Dribble Profile</span>
-          </Button>
-        </a> -->
 
         <Tooltip client:visible>
           <Button aria-label="easter egg btn">
@@ -62,12 +45,13 @@ import Tooltip from "./Tooltip/index";
       </div>
     </div>
 
-    <img
-      width="300"
-      height="300"
-      src="/cuong-luu-medicine-portrait.png"
+    <Image
+      src={portraitImage}
+      width={300}
+      height={300}
       class="w-auto max-h-[300px] select-none absolute right-[-65px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none"
       alt="Portrait photo of Cuong P. Luu in white coat"
+      loading="lazy"
     />
   </div>
 </Card>
