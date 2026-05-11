@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=hTBR3yJ5IEs&t=257s
   - Unpack gloves package upside down, so that the respective glove for each hand already have the thumb and cuff orientation needed at pick-up. 
 
 # Knot Tying
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1McNgappCY64JLY3stghHBd01_vIyVzIlezkhgob7qfv76qE1bzhsdMFn5QkSiWhBkAW1MQApr3ok/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="768" height="455" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1McNgappCY64JLY3stghHBd01_vIyVzIlezkhgob7qfv76qE1bzhsdMFn5QkSiWhBkAW1MQApr3ok/pubembed?start=false&loop=false&delayms=60000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Holding your instruments
 

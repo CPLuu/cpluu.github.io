@@ -2,11 +2,13 @@
 layout: ../../layouts/LayoutBlogPost.astro
 title: "Gleams of Light"
 description: "Rec of readings and videos that built me different"
-pubDate: 2026-04-18
+pubDate: 2026-04-24
 category: "philosophy"
 ---
 
-I feel grateful to have grown up with ideas and teachings from the following people. I would like to share some of them here for those looking to expand and strengthen their identity and actions:
+In the process of pursuing my mission, I realized the importance of balancing both competence and character. I've been to the top of the tower, and I did not like the loneliness, cruelty, and self-serving I witnessed. Yet, compassion and great character alone are too dull to cut through systemic sufferring.
+
+I am still in the process of building myself as I pursue my Sisyphean task. I feel grateful to have grown up with ideas and teachings from the following people, which served as my guiding lights:
 
 - On personhood: https://emersoncentral.com/ebook/Self-Reliance.pdf
 - On doctoring: https://www.capebardo.com/single-post/2019/10/21/carl-jung-accept-yourself-before-you-wreck-yourself
