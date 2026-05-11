@@ -1,13 +1,18 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card/index.astro";
 import GlowingStarsBanner from "../../components/GlowingStarsBanner";
+import snoopyStars from "../../assets/snoopy-stars.png";
 
 const posts = (await getCollection("blog")).sort(
   (blogEntryA, blogEntryB) =>
     blogEntryB.data.pubDate.getTime() - blogEntryA.data.pubDate.getTime(),
 );
+
+const bannerTextLine1 = "May our strife and striving".split(" ");
+const bannerTextLine2 = "lead us starward...".split(" ");
 ---
 
 <script>
@@ -31,13 +36,17 @@ const posts = (await getCollection("blog")).sort(
       class="text-white bg-neutral-900 hover:bg-neutral-800 px-4 py-2 mb-8 border-1 border-solid border-neutral-600 rounded-lg"
       >Back</a
     >
-    <div class="w-full mb-8 flex justify-center overflow-hidden">
-      <GlowingStarsBanner client:load />
+    <div class="w-full mb-8 flex justify-center shrink-0">
+      <GlowingStarsBanner client:only="solid" />
     </div>
-    <div class="grid grid-cols-1 gap-4 w-full">
+    <div class="grid grid-cols-1 gap-4 w-full mb-12">
       {
         posts.map((post) => (
-          <Card href={`/notes/${post.slug}`} colSpan="md:col-span-1" padding="px-6 py-[14px]">
+          <Card
+            href={`/notes/${post.slug}`}
+            colSpan="md:col-span-1"
+            padding="px-6 py-[14px]"
+          >
             <div>
               <h2 class="font-semibold text-2xl text-white">
                 {post.data.title}
@@ -48,5 +57,65 @@ const posts = (await getCollection("blog")).sort(
         ))
       }
     </div>
+
+    <div class="w-9/10 mx-auto mt-auto opacity-80 pt-[124px] pb-8">
+      <h3
+        class="text-white text-3xl md:text-4xl font-medium tracking-wider banner-text flex flex-col"
+      >
+        <div class="wavy-container text-left">
+          {
+            bannerTextLine1.map((word, i) => (
+              <span class="wavy-word" style={`animation-delay: ${i * 0.15}s`}>
+                {word}&nbsp;
+              </span>
+            ))
+          }
+        </div>
+        <div class="wavy-container text-right mt-1 md:mt-2">
+          {
+            bannerTextLine2.map((word, i) => (
+              <span
+                class="wavy-word"
+                style={`animation-delay: ${(bannerTextLine1.length + i) * 0.15}s`}
+              >
+                {word}&nbsp;
+              </span>
+            ))
+          }
+        </div>
+      </h3>
+    </div>
+
+    <div
+      class="w-full flex justify-center mt-3 mb-3 opacity-3 hover:opacity-100 transition-opacity duration-700 cursor-pointer"
+    >
+      <Image
+        src={snoopyStars}
+        alt="Snoopy stargazing"
+        class="w-32 md:w-48 object-contain"
+      />
+    </div>
   </main>
 </Layout>
+
+<style>
+  .banner-text {
+    font-family: "CabinetGrotesk", sans-serif;
+  }
+  .wavy-container {
+    display: block;
+  }
+  .wavy-word {
+    display: inline-block;
+    animation: wave-banner 3s ease-in-out infinite;
+  }
+  @keyframes wave-banner {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+</style>

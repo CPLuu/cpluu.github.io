@@ -2,7 +2,7 @@
 layout: ../../layouts/LayoutBlogPost.astro
 title: "Surgical Student Procedural Competencies"
 description: "Rizzing up the OR as a medical student"
-pubDate: 2026-04-18
+pubDate: 2026-05-10
 category: "methods"
 ---
 
@@ -16,10 +16,14 @@ https://www.youtube.com/watch?v=hTBR3yJ5IEs&t=257s
   - Unpack gloves package upside down, so that the respective glove for each hand already have the thumb and cuff orientation needed at pick-up. 
 
 # Knot Tying
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1McNgappCY64JLY3stghHBd01_vIyVzIlezkhgob7qfv76qE1bzhsdMFn5QkSiWhBkAW1MQApr3ok/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="768" height="455" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Holding your instruments
 
 # Suturing
+
+- Simple interrupted: https://www.youtube.com/watch?v=z8oWv-nVO6g
+
 
 ## Drain stitch
 https://www.youtube.com/watch?v=MzdqBvH45ys
@@ -28,5 +32,13 @@ https://www.youtube.com/watch?v=MzdqBvH45ys
 https://www.youtube.com/watch?v=tRX5cyZMlSA
 - Often, we end by driving the needle under the tissue and cut at skin surface to bury the loose end
 
-
+    <div
+      class="w-full flex justify-center mt-10 mb-3 opacity-3 hover:opacity-100 transition-opacity duration-700 cursor-pointer"
+    >
+      <img
+        src="/snoopy-stars.png"
+        alt="Snoopy stargazing"
+        class="w-32 md:w-48 object-contain"
+      />
+    </div>
 
