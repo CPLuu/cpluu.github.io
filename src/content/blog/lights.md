@@ -13,3 +13,5 @@ I am still in the process of building myself as I pursue my Sisyphean task. I fe
 - On personhood: https://emersoncentral.com/ebook/Self-Reliance.pdf
 - On doctoring: https://www.capebardo.com/single-post/2019/10/21/carl-jung-accept-yourself-before-you-wreck-yourself
 - On academia: https://www.terrydjohnson.com/about#h.ejtnapbeifk
+- On life, goals, and career: https://www.youtube.com/watch?v=ji5_MqicxSo&list=WL&index=1&t=1s (Shared with me by Michael Yartsev)
+- More on life, goals, and career: https://www.youtube.com/watch?v=uxoCnxlxpIk&list=WL&index=24
