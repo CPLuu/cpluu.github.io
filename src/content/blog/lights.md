@@ -15,3 +15,6 @@ I am still in the process of building myself as I pursue my Sisyphean task. I fe
 - On academia: https://www.terrydjohnson.com/about#h.ejtnapbeifk
 - On life, goals, and career: https://www.youtube.com/watch?v=ji5_MqicxSo&list=WL&index=1&t=1s (Shared with me by Michael Yartsev)
 - More on life, goals, and career: https://www.youtube.com/watch?v=uxoCnxlxpIk&list=WL&index=24
+
+- On idea sharing: https://www.gutenberg.org/files/34901/34901-h/34901-h.htm
+- On productivity: https://en.wikipedia.org/wiki/Cal_Newport

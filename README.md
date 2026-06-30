@@ -8,14 +8,11 @@ My portfolio example: **[click here](https://cpluu.github.io/)**
 
 ## Features
 
-- Modern and Minimal bento-like, sleek UI Design
-- All in one page (almost)
-- Fully Responsive
-- Performances and SEO optimizations
+- Minimal bento-like UI all in one page (almost)
+- Fully responsive, optimized for performance and SEO
 - Ready to be deployed on GitHub Pages
-- Blog
-- RSS support (your-domain/rss.xml)
-- Cool 3d globe
+- Got blog + RSS support (your-domain/rss.xml)
+- Cool artifacts like clock, 3d globe, and neuro-inspired blinker panel
 
 ## Tech Stack
 

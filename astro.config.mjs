@@ -11,6 +11,9 @@ import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
   site: "https://cuongpluu.com/",
+  redirects: {
+    '/physical-autonomy': 'https://physical-autonomy-bci.netlify.app/'
+  },
   integrations: [
     sitemap(),
     robotsTxt(),
